@@ -1,4 +1,4 @@
-> Scrapper que permite obtener puntos de interés en las comunas de Santiago
+> Scrapper que permite obtener puntos de interés en las comunas de Santiago.
 
 # Setup
 
@@ -13,6 +13,42 @@ Reemplazar esa API_KEY en la línea 90 de poy.py
 ```
 python poi.py
 ```
+
+# Output
+
+La salida son los archivos `points_of_interest.json` y `points_of_interest.csv` codificado en UTF-8.
+
+Formato del json:
+
+```json
+{
+    "La Reina": {
+        "Estadio Banco Central": {
+            "id": "ChIJ3acDXlTOYpYRyN9BDmhbdGk",
+            "direccion": "Príncipe de Gales 6030, La Reina, Región Metropolitana",
+            "comuna": "La Reina",
+            "tipo": [
+                "stadium",
+                "point_of_interest",
+                "establishment"
+            ],
+            "lat": -33.4373338,
+            "lng": -70.5707422,
+            "ciudad": "Santiago",
+            "icono": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        },
+        "Parque Padre Hurtado": {...},
+	},
+	"Pudahuel":{...
+	},
+}
+```
+
+Formato de csv:
+
+| Nombre | Comuna | Direccion | Tipos | Lng  | Lat  | Ciudad | Icono | Id   |
+| ------ | ------ | --------- | ----- | ---- | ---- | ------ | ----- | ---- |
+|        |        |           |       |      |      |        |       |      |
 
 # Funcionamiento
 
