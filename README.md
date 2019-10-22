@@ -8,7 +8,7 @@ Activar la API de Google Places
 
 Generar una API_KEY
 
-Reemplazar esa API_KEY en la línea 90 de poy.py
+Reemplazar esa API_KEY en la línea 90 de `poi.py`
 
 ```
 python poi.py
@@ -75,7 +75,7 @@ De cada lugar se obtienen los campos:
 - Lat
 - Ciudad
 - Icono
-- Id
+- Id (Corresponde al ID único de un lugar en la API de Google Places)
 
 En el resultado **pueden haber lugares repetidos** y cuando se buscan lugares para cierta comuna, puede encontrar lugares de otra. Por eso el valor de la columna comuna se saca de la dirección de cada lugar y no de la comuna utilizada en la query. 
 
